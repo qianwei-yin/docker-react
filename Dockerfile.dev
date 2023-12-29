@@ -1,0 +1,13 @@
+FROM node:16-alpine
+
+WORKDIR '/app'
+
+COPY ./package.json ./
+RUN npm install
+
+# Since we are using docker volumes, so this line is not necessary
+# However, we can leave it as a reminder or a reference for ourselves in the future
+# For example, if one day we decide to not using the docker-compose or only use Dockerfile in production, then this line is needed
+COPY ./ ./
+
+CMD ["npm", "run", "start"]
