@@ -12,6 +12,7 @@ function App() {
 				<a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
 					Learn React!!!
 				</a>
+				<p>This is a line committed and pushed to feature branch. Then do a pull request and merge into main to see if CI/CD is working!!!!!</p>
 			</header>
 		</div>
 	);
